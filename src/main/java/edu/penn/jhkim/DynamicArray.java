@@ -54,7 +54,7 @@ public class DynamicArray<T> {
 
     //Complexity: O(n)
     public void remove(int index){
-        if(index > size){
+        if(index >= size){
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
         }
         for(int i = index; i < size - 1; i++){
